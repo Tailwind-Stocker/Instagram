@@ -1,0 +1,24 @@
+Title {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 30px;
+    font-family: montserrat, sans-serif;
+    cursor: pointer;
+}
+
+.text {
+    padding-bottom: 0.15em;
+    background: linear-gradient(#a85bdf 0 0),
+        linear-gradient(#a85bdf 0 0);
+    background-size: 0.3em 0.1em;
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    transition: 0.3s linear,
+        background-size 0.3s 0.2s linear;
+        text-align: center;
+}
+
+.text:hover {
+    background-size: 40% 0.1em;
+    background-position: 10% 100%, 90% 100%;
+}
