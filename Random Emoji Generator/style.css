@@ -1,0 +1,77 @@
+:root{
+    --card-bg-color: rgb(60, 161, 255);
+    --btn-border-color: rgb(255, 43, 166);
+    --btn-bg-color: rgba(255, 255, 255,0);
+    --btn-hover-bg-color: rgb(255, 43, 166);
+}
+
+/* container */
+.container {
+    height: 350px;
+    width: 600px;
+    background-color: var(--card-bg-color);
+    display: flex;
+    Flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 1rem;
+    padding: 20px;
+    border-radius: 28px;
+}
+
+/* container header */
+.container-header {
+    /* height: 18%;*/
+    width: 100%;
+    text-align: center;
+    font-size: var(--fs-header-text);
+    font-weight: var(--fw-header-text);
+    color: var(--fc-main-text);
+}
+
+/* container body */
+.container-body {
+    /* height: 80%; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.emoji {
+    height: 150px;
+    width: 150px;
+    border: none;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    background-color: #ddd;
+}
+
+/* container footer */
+.container-footer {
+    /* height: 10%; */
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-footer button {
+    border: 2px solid var(--btn-border-color);
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: var(--btn-bg-color);
+    font-size: var(--fs-btn-text);
+    font-weight: var(--fw-btn-text);
+    color: var(--fc-btn-text);
+    cursor: pointer;
+}
+
+.container-footer button:hover {
+    background-color: var(--btn-hover-bg-color);
+    color: var(--fc-btn-hover-text);
+    transition: var(--btn-transition);
+}
